@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Static Template</title>
+    <style>
+        .main {
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+        margin {
+            background-color: #181815;
+            width : 700px;
+        }
+        form {
+            background-color: #f1ed94;
+            width: 600px;
+        }
+
+        .note {
+            margin-bottom: 1.7rem;
+        }
+
+        .p-red {
+            color: red;
+            display: inline;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .form-lable {
+            flex-basis: 35%;
+            font-weight: bold;
+        }
+
+        .form-input {
+            flex-basis: 65%;
+        }
+
+        .form-input input[type="text"] {
+            border: 1px solid #80bdff;
+            border-radius: 5px;
+            outline: 0;
+            height: 1.5rem;
+            width: 80%;
+        }
+
+        .form-input input[type="text"]:focus {
+            border-color: goldenrod;
+            outline: 0;
+        }
+
+        textarea {
+            border-radius: 5px;
+        }
+
+        select {
+            border-radius: 5px;
+        }
+
+        h1 {
+            background-color: #28cccc;
+        }
+    </style>
+</head>
+<body>
+<div class="margin">
+    <div class="main">
+        <form action="" method="post">
+            <div class="note">
+                <!--      (-->
+                <!--      <div class="p-red">*</div>-->
+                <!--      ) Required fields-->
+                <div>
+                    <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-lable"
+                >Họ
+                    <div class="p-red">*</div>
+                </label
+                >
+                <div class="form-input">
+                    <input type="text" class="input" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-lable"
+                >Tên
+                    <div class="p-red">*</div>
+                </label
+                >
+                <div class="form-input">
+                    <input type="text" class="input" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-lable"
+                >Giới tính
+                    <div class="p-red">*</div>
+                </label
+                >
+                <div class="form-input">
+                    <input type="radio" name="account"/>Nam
+                    <input type="radio" name="account"/>Nữ
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-lable"
+                >Địa chỉ
+                    <div class="p-red">*</div>
+                </label
+                >
+                <div class="form-input">
+                    <textarea class="input" required></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-lable"
+                >Lớp
+                    <div class="p-red">*</div>
+                </label
+                >
+                <div class="form-input">
+                    <select required class="input">
+                        <option>---chọn lớp---</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-lable">Email</label>
+                <div class="form-input">
+                    <input type="text" class="input"/>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-lable"
+                >Điện thoại
+                    <div class="p-red">*</div>
+                </label
+                >
+                <div class="form-input">
+                    <input type="text" class="input"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Đăng ký"/>
+                <input type="reset" value="Nhập lại"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
